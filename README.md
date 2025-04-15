@@ -23,7 +23,12 @@ The models are trained on the prepared dataset to learn the patterns that differ
  
 ## **Model Evaluation and Fine-tuning:**
   - The trained models are evaluated using metrics like accuracy, precision, recall, and F1-score.
-  - The models can be further fine-tuned to improve their performance by adjusting hyperparameters or using different feature selection techniques. 
+  - The models can be further fine-tuned to improve their performance by adjusting hyperparameters or using different feature selection techniques.
+I have tried out three different feature selection techniques for this dataset.
+  - Recursive Feature Elimination(RFE)
+  - Chi2
+  - Random Forest Feature Importance
+Among these RFE is better in handling high dimensional dataset like "PhiUSIIL Phishing URL".
 
 ## **End Results**
 From the obtained results of the above models, Random Forest Classifier has highest model performance of 99%. So the model is saved to the file 'Phishing_.pkl'.
